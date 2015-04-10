@@ -1,0 +1,24 @@
+
+    <div class="well" >
+ 
+      <h3>Create a New Product</h3>
+
+        <h2>{{ error }}</h2>
+      
+      <table class="table table-bordered table-stripped">
+        <tr>  
+          <th>Name</th>
+          <th>Description</th>
+          <th>Price</th>
+          <th>Category</th>
+        </tr>
+        <tr>
+          <td><input type="text" ng-model="product.name"></td>
+          <td><input type="text" ng-model="product.description"></td>
+          <td><input type="text" ng-model="product.price"></td>
+          <td><input type="text" ng-model="product.category"></td>
+          <td><button class="btn btn-default" ng-click="createProduct()">Create Product</td>
+      </table>
+    </div>
+<a ng-href="#/admin" class="btn btn-default"> Back to the Admin Panel </a>
+

@@ -1,0 +1,28 @@
+    <div class="well" >
+ 
+      <h3>Orders</h3>
+
+        <h2>{{ error }}</h2>
+      
+      <table class="table table-bordered table-stripped">
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Address</th>
+        <th>Email</th>
+        <tr ng-repeat="order in orders">          
+          <td>
+             {{order.firstname}}
+          </td>
+          <td>
+             {{order.lastname}}
+          </td>
+          <td> 
+             {{order.address}}
+          </td>
+          <td> 
+             {{order.email}}
+          </td>                
+        </tr>        
+      </table>
+    </div>
+<a ng-href="#/admin" class="btn btn-default"> Back to the Admin Panel </a>

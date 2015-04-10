@@ -1,0 +1,29 @@
+<div class="well">
+ 
+  <h3>Place an Order</h3>
+
+    <h2>{{ error }}</h2>
+      
+  <table class="table well" style="max-width: 50%;">
+    <tr>  
+      <th>Firstname</th>
+      <td><input type="text" ng-model="order.firstname"></td>
+      <th>Lastname</th>
+      <td><input type="text" ng-model="order.lastname"></td>
+      <th>Address</th>
+      <td><input type="text" ng-model="order.address"></td>
+    </tr>
+    <tr>
+      <th>Zip</th>
+      <td><input type="text" ng-model="order.zip"></td>      
+      <th>City</th>
+      <td><input type="text" ng-model="order.city"></td>
+      <th>Email</th>
+      <td><input type="text" ng-model="order.email"></td>
+     <tr>
+      <td><button class="btn btn-default" ng-click="createOrder()">Create Order</td>
+     </tr>
+  </table>
+</div>
+<a ng-href="#/admin" class="btn btn-default"> Back to the Admin Panel </a>
+
